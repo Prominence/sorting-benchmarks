@@ -9,12 +9,12 @@ java -jar -Darray.size=20000 target/sorting-benchmark.jar -wi 5 -i 5 -f 1
 
 ### Sample results
 ```
-Benchmark                         Mode  Cnt  Score   Error  Units
-SortingBenchmark.bubbleSort       avgt       0.440           s/op
-SortingBenchmark.insertionSort    avgt       0.213           s/op
-SortingBenchmark.javaDefaultSort  avgt       0.001           s/op
-SortingBenchmark.mergeSort        avgt       0.002           s/op
-SortingBenchmark.selectionSort    avgt       0.071           s/op
+Benchmark                         Mode  Cnt   Score   Error  Units
+SortingBenchmark.bubbleSort       avgt       14.326           s/op
+SortingBenchmark.insertionSort    avgt        5.352           s/op
+SortingBenchmark.javaDefaultSort  avgt        0.005           s/op
+SortingBenchmark.mergeSort        avgt        0.009           s/op
+SortingBenchmark.selectionSort    avgt        1.751           s/op
 ```
 
 ### `jmh` command line options
