@@ -1,9 +1,6 @@
 package com.github.prominence.benchmark;
 
-import com.github.prominence.sort.BubbleSort;
-import com.github.prominence.sort.InsertionSort;
-import com.github.prominence.sort.MergeSort;
-import com.github.prominence.sort.SelectionSort;
+import com.github.prominence.sort.*;
 import org.openjdk.jmh.annotations.*;
 
 import java.util.Arrays;
@@ -55,5 +52,11 @@ public class SortingBenchmark {
     @BenchmarkMode(Mode.AverageTime)
     public void mergeSort(MyState state) {
         MergeSort.sort(state.getData());
+    }
+
+    @Benchmark
+    @BenchmarkMode(Mode.AverageTime)
+    public void quickSort(MyState state) {
+        QuickSort.sort(state.getData());
     }
 }
